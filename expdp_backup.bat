@@ -4,18 +4,17 @@ REM #                                                                    #
 REM # expdp_backup.bat                                                   #
 REM #                                                                    #
 REM # Author: Stacey M. Sharp, Jr. (ssharp[AT]thomsonplastics[DOT]com)   #
-REM # Version: 2016-01-22                                                #
+REM # Version: 2016-01-21                                                #
 REM # Description: Oracle/IQMS Database Backup Script                    #
 REM #   Performs a Data Pump backup and zips it.                         #
 REM #   The file is named with the current date/time.                    #
 REM #                                                                    #
 REM ######################################################################
 
-REM # Set Variables (replace USER, PASS and DB with your credentials)
-REM # The script will not run without these variables set!
-SET USER=
-SET PASS=
-SET DB=
+REM # Call credentials from another file (USER, PASS, DB)
+@call creds.bat
+
+REM # Set Variables
 SET DUMPDRIVE=F
 SET DUMPDIR=dump
 
