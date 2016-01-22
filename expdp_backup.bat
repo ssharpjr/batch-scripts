@@ -11,10 +11,11 @@ REM #   The file is named with the current date/time.                    #
 REM #                                                                    #
 REM ######################################################################
 
-REM # Set Variables
-SET USER=<USER>
-SET PASS=<PASSWORD>
-SET DB=<DB>
+REM # Set Variables (replace USER, PASS and DB with your credentials)
+REM # The script will not run without these variables set!
+SET USER=
+SET PASS=
+SET DB=
 SET DUMPDRIVE=F
 SET DUMPDIR=dump
 
