@@ -3,7 +3,7 @@ REM #
 REM # delete_old_backups.bat
 REM #
 REM # Deletes any files in the specified folder that exceeds
-REM # 8 days
+REM # 30 days
 REM #
 REM ############################################################
 
